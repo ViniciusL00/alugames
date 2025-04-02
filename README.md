@@ -48,12 +48,19 @@ Na segunda aula, fizemos algumas mudanças no código para melhorar sua estrutur
 O código abaixo manipula classes de elementos HTML para controlar o estado de um jogo (se está alugado ou não) e altera o conteúdo do botão de acordo com essa condição.
 
 ```if (imagem.classList.contains('dashboard__item__img--rented')) {```
+
 ```imagem.classList.remove('dashboard__item__img--rented'); // imagem me da sua lista de classe e remova essa classe 'dashboard__item__img--rented'```
+
 ```botao.classList.remove('dashboard__item__button--return') // botao me da sua lista de classe e remova essa classe 'dashboard__item__button--return'```
+
 ```botao.textContent = 'Alugar';```
+
 ```} else {```
+
 ```imagem.classList.add('dashboard__item__img--rented'); // imagem me da sua lista de classe e adicione essa classe 'dashboard__item__img--rented'```
+
 ```botao.textContent = 'Devolver';```
+
 ```botao.classList.add('dashboard__item__button--return') // botao me da sua lista de classe e adicione essa classe 'dashboard__item__button--return'}```
 
 **Explicando as funções:**
